@@ -1,0 +1,876 @@
+{
+  "answer_summaries": {
+    "combined": {
+      "observation_count": 5,
+      "observations": [
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:8fb023e3030058a86bb0c35258761adae5cf2d438b539c14c54b7a6180931228",
+              "source_hash": "sha256:2587df943a604f64ad07701ed70c6b4d1d9e95630b0ef854299634bca5076841"
+            }
+          ],
+          "derivation": {
+            "maximum_chars": 520,
+            "method": "contact_safe_bounded_excerpt"
+          },
+          "kind": "report_selected_excerpt",
+          "observation_id": "sha256:1b265a77b0306db89fdadaf8663179de355e968730589a8b8d18f615a1e2e835",
+          "text": "증권사 리포트에서 선택된 근거입니다. 공개 replay에서는 저작권이 있는 원문 발췌와 연락처를 제거하고 페이지·bbox·source hash만 표시합니다.",
+          "title": "리포트 선택 근거"
+        },
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:9b1cfa16b117fb0aceb5fd3839c3a93ad15eb587e1978760f356a3eb137f5a9b",
+              "source_hash": "sha256:f7d7471ea6fdb44305016f98a89c7fb9a89a4594062c46419ca6716e84da4273"
+            },
+            {
+              "citation_id": "sha256:cff2bf8d6cd6274436ac0e10033558ee1c4a54c8df6de81de36f768067cfd793",
+              "source_hash": "sha256:5fd03c931296186cb1c3bd216895e402e2cb9544c6dcac1c0d7d6824e0af4238"
+            }
+          ],
+          "derivation": {
+            "current_period": "2025",
+            "current_value": "1506925065850",
+            "method": "percent_change",
+            "metric": "revenue",
+            "percent_change": "-4.5116",
+            "previous_period": "2024",
+            "previous_value": "1578123132867",
+            "unit": "KRW"
+          },
+          "kind": "financial_trend",
+          "observation_id": "sha256:90dde6ecac0f04a017f511a3c250e2699447aa29f1eeb8567861d29b7ba92022",
+          "text": "매출은 2024년 1,578,123,132,867원에서 2025년 1,506,925,065,850원으로 -4.5116%했습니다.",
+          "title": "매출 2024→2025"
+        },
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:e194080d33a2d0adaabdf39c643936d2cb23280be6ae9baf3b961339aa437032",
+              "source_hash": "sha256:b99e7f4a62e3ab6c692288f0123151115e08283493588429a87c087ded755b67"
+            },
+            {
+              "citation_id": "sha256:49ad50780612524ce3304a6dec38a738aaa17889ef45b836d455d6e6aacc60ab",
+              "source_hash": "sha256:cc4e3f5f14d08394810753ab31682c9c10a66146536b082714009298b9d0fa92"
+            }
+          ],
+          "derivation": {
+            "current_period": "2025",
+            "current_value": "16078426029",
+            "method": "loss_to_profit",
+            "metric": "operating_profit",
+            "percent_change": null,
+            "previous_period": "2024",
+            "previous_value": "-109215374026",
+            "unit": "KRW"
+          },
+          "kind": "financial_trend",
+          "observation_id": "sha256:ccbdd5eb016164b932bae3fae3fe1f91dc691f90f8b42aceeb62394dbf3260a1",
+          "text": "영업이익은 2024년 -109,215,374,026원에서 2025년 16,078,426,029원으로 적자에서 흑자로 전환했습니다.",
+          "title": "영업이익 2024→2025"
+        },
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:4e048e01b132b4cec065d334aa64c850278c47313b4571408643febec7606d0e",
+              "source_hash": "sha256:d8db14de8e03489b979fad581cc6be104cd7e3858db26891009765fba0aedb39"
+            },
+            {
+              "citation_id": "sha256:b05e68338e1ae47781249f59f6cd677d0725bd49192bdbc72431d0e5c4671c17",
+              "source_hash": "sha256:163774842ed7bc3ab4161cf1cdf587e9f41cdfd8806d06d9081ce4ef4198f5ac"
+            },
+            {
+              "citation_id": "sha256:9855a84707650dbb13b4706488843efe741eb7b89e669cf667a7644e74d98f8f",
+              "source_hash": "sha256:310bb0f1bafe4f81ff958837b118c471bac1cd2f3300d4ccfc3be275159f8d10"
+            }
+          ],
+          "derivation": {
+            "as_of": "2026-08-07",
+            "dataset_hash": "sha256:319896ecd93085793f31f6131b31d587b6b99ee33ec591fed3ba82193dbe11ae",
+            "method": "reviewed_stock_snapshot",
+            "ticker": "036570"
+          },
+          "kind": "market_subject_snapshot",
+          "observation_id": "sha256:be703602ba44875c3fdf40262b8ab43a4280e50f6f2a77694e9aa8258fdab80a",
+          "text": "엔씨소프트(036570)의 2026-08-07 종가는 248,500원, 20거래일 수익률은 -0.4008%, 연환산 변동성은 +46.0252%입니다.",
+          "title": "NCSoft 시장 스냅샷"
+        },
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:a2cefd67d8314019c9384ddedbdb9d229ceeb32c4f7360758809b7c43f27ba76",
+              "source_hash": "sha256:637d48739fea8baf7f05bd2a837bd3182768e04f9b5de459179b7eafd8c77a4b"
+            }
+          ],
+          "derivation": {
+            "article": "제14조의2",
+            "direct_applicability": "not_established",
+            "method": "applicability_guard"
+          },
+          "kind": "legal_applicability_guard",
+          "observation_id": "sha256:947b18b6dd0aa5420089f513f08b8c0579265e6a3e5a476e081f5a9a15583bc0",
+          "text": "현재 corpus에서 전자금융 관련 조문은 확인되지만, 이 근거만으로 엔씨소프트에 대한 직접 적용성을 확정할 수 없습니다.",
+          "title": "전자금융 규제의 직접 적용성"
+        }
+      ],
+      "status": "pass_with_limitations",
+      "summary_hash": "sha256:59904dba3cf9323a1ebd2a9e36b21ed47c59ec86cb882119487dce2bf8f95753"
+    },
+    "financial": {
+      "observation_count": 3,
+      "observations": [
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:9b1cfa16b117fb0aceb5fd3839c3a93ad15eb587e1978760f356a3eb137f5a9b",
+              "source_hash": "sha256:f7d7471ea6fdb44305016f98a89c7fb9a89a4594062c46419ca6716e84da4273"
+            },
+            {
+              "citation_id": "sha256:cff2bf8d6cd6274436ac0e10033558ee1c4a54c8df6de81de36f768067cfd793",
+              "source_hash": "sha256:5fd03c931296186cb1c3bd216895e402e2cb9544c6dcac1c0d7d6824e0af4238"
+            }
+          ],
+          "derivation": {
+            "current_period": "2025",
+            "current_value": "1506925065850",
+            "method": "percent_change",
+            "metric": "revenue",
+            "percent_change": "-4.5116",
+            "previous_period": "2024",
+            "previous_value": "1578123132867",
+            "unit": "KRW"
+          },
+          "kind": "financial_trend",
+          "observation_id": "sha256:90dde6ecac0f04a017f511a3c250e2699447aa29f1eeb8567861d29b7ba92022",
+          "text": "매출은 2024년 1,578,123,132,867원에서 2025년 1,506,925,065,850원으로 -4.5116%했습니다.",
+          "title": "매출 2024→2025"
+        },
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:e194080d33a2d0adaabdf39c643936d2cb23280be6ae9baf3b961339aa437032",
+              "source_hash": "sha256:b99e7f4a62e3ab6c692288f0123151115e08283493588429a87c087ded755b67"
+            },
+            {
+              "citation_id": "sha256:49ad50780612524ce3304a6dec38a738aaa17889ef45b836d455d6e6aacc60ab",
+              "source_hash": "sha256:cc4e3f5f14d08394810753ab31682c9c10a66146536b082714009298b9d0fa92"
+            }
+          ],
+          "derivation": {
+            "current_period": "2025",
+            "current_value": "16078426029",
+            "method": "loss_to_profit",
+            "metric": "operating_profit",
+            "percent_change": null,
+            "previous_period": "2024",
+            "previous_value": "-109215374026",
+            "unit": "KRW"
+          },
+          "kind": "financial_trend",
+          "observation_id": "sha256:ccbdd5eb016164b932bae3fae3fe1f91dc691f90f8b42aceeb62394dbf3260a1",
+          "text": "영업이익은 2024년 -109,215,374,026원에서 2025년 16,078,426,029원으로 적자에서 흑자로 전환했습니다.",
+          "title": "영업이익 2024→2025"
+        },
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:295a84b6c2fd032735eb5c469d96f00751c5bd30d0acf79e1016802ae3effd66",
+              "source_hash": "sha256:c1bc38de9ac87c9a243b5de8e7fea160a23bc2fc0b57d618149935865609d746"
+            },
+            {
+              "citation_id": "sha256:af3eca9c2c8d9d3a967d24f36a6ef8640fabf5d89be6bc3ff83749af06b469b2",
+              "source_hash": "sha256:fdd160a7b27cacde9b97ecff83601b7d8dfce2c8e0224d800fe66ac56ce06efe"
+            }
+          ],
+          "derivation": {
+            "current_period": "2025",
+            "current_value": "347421554268",
+            "method": "percent_change",
+            "metric": "net_income",
+            "percent_change": "+269.1425",
+            "previous_period": "2024",
+            "previous_value": "94115833907",
+            "unit": "KRW"
+          },
+          "kind": "financial_trend",
+          "observation_id": "sha256:1463aa1d947085920b7adfd63df41259933cd13b817ee79f36ec2009070f035f",
+          "text": "순이익은 2024년 94,115,833,907원에서 2025년 347,421,554,268원으로 +269.1425%했습니다.",
+          "title": "순이익 2024→2025"
+        }
+      ],
+      "status": "pass",
+      "summary_hash": "sha256:77a526c1cfd3e0009f5a97aebd6deb7354f2b9273b930b7ec0d8bcdc4dd9a37a"
+    },
+    "legal": {
+      "observation_count": 1,
+      "observations": [
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:a2cefd67d8314019c9384ddedbdb9d229ceeb32c4f7360758809b7c43f27ba76",
+              "source_hash": "sha256:637d48739fea8baf7f05bd2a837bd3182768e04f9b5de459179b7eafd8c77a4b"
+            }
+          ],
+          "derivation": {
+            "article": "제14조의2",
+            "direct_applicability": "not_established",
+            "method": "applicability_guard"
+          },
+          "kind": "legal_applicability_guard",
+          "observation_id": "sha256:947b18b6dd0aa5420089f513f08b8c0579265e6a3e5a476e081f5a9a15583bc0",
+          "text": "현재 corpus에서 전자금융 관련 조문은 확인되지만, 이 근거만으로 엔씨소프트에 대한 직접 적용성을 확정할 수 없습니다.",
+          "title": "전자금융 규제의 직접 적용성"
+        }
+      ],
+      "status": "pass_with_limitations",
+      "summary_hash": "sha256:f70d603c7e5dfc662d32467a691a8bccc56b5661bdc59143e9fd58dfc8c311f6"
+    },
+    "market": {
+      "observation_count": 3,
+      "observations": [
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:4e048e01b132b4cec065d334aa64c850278c47313b4571408643febec7606d0e",
+              "source_hash": "sha256:d8db14de8e03489b979fad581cc6be104cd7e3858db26891009765fba0aedb39"
+            },
+            {
+              "citation_id": "sha256:b05e68338e1ae47781249f59f6cd677d0725bd49192bdbc72431d0e5c4671c17",
+              "source_hash": "sha256:163774842ed7bc3ab4161cf1cdf587e9f41cdfd8806d06d9081ce4ef4198f5ac"
+            },
+            {
+              "citation_id": "sha256:9855a84707650dbb13b4706488843efe741eb7b89e669cf667a7644e74d98f8f",
+              "source_hash": "sha256:310bb0f1bafe4f81ff958837b118c471bac1cd2f3300d4ccfc3be275159f8d10"
+            }
+          ],
+          "derivation": {
+            "as_of": "2026-08-07",
+            "dataset_hash": "sha256:319896ecd93085793f31f6131b31d587b6b99ee33ec591fed3ba82193dbe11ae",
+            "method": "reviewed_stock_snapshot",
+            "ticker": "036570"
+          },
+          "kind": "market_subject_snapshot",
+          "observation_id": "sha256:be703602ba44875c3fdf40262b8ab43a4280e50f6f2a77694e9aa8258fdab80a",
+          "text": "엔씨소프트(036570)의 2026-08-07 종가는 248,500원, 20거래일 수익률은 -0.4008%, 연환산 변동성은 +46.0252%입니다.",
+          "title": "NCSoft 시장 스냅샷"
+        },
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:63909ed6852d260f14ed73c41479eaa9d8eadd0f654ec07a41fa5e999c2a8b6c",
+              "source_hash": "sha256:b774efb0e547471ea94c8168b9fc6cdc3f5f86d54bf48b18a7c6dce342a6031f"
+            }
+          ],
+          "derivation": {
+            "as_of": "2026-08-07",
+            "method": "peer_20_session_return_and_annualized_volatility",
+            "peer_count": 4
+          },
+          "kind": "market_peer_comparison",
+          "observation_id": "sha256:eea92c1efed6215a4351fcaefec4cd84e27049b5cc0229223b96d13267863b43",
+          "table": [
+            {
+              "annualized_volatility": "0.475463087852",
+              "as_of": "2026-08-07",
+              "close_krw": "40900",
+              "company": "넷마블",
+              "dataset_hash": "sha256:965761af8fe6bc5b8c05201df946830f1f309335d7a3058187b4a2b7aad89133",
+              "market_cap_krw": null,
+              "return_20_session": "0.069281045751633986928104575",
+              "ticker": "251270"
+            },
+            {
+              "annualized_volatility": "0.595294224388",
+              "as_of": "2026-08-07",
+              "close_krw": "241500",
+              "company": "크래프톤",
+              "dataset_hash": "sha256:42e36ef4ac0bf0a946f32a80d17da6bcc599bab0c95f7fd7fe5543598b55752a",
+              "market_cap_krw": null,
+              "return_20_session": "0.01257861635220125786163522",
+              "ticker": "259960"
+            },
+            {
+              "annualized_volatility": "0.549689131838",
+              "as_of": "2026-08-07",
+              "close_krw": "35600",
+              "company": "펄어비스",
+              "dataset_hash": "sha256:53bea14e3e1dc3cd8454372a5b72fa7d5b07678e919cb4973af639cd973af0ee",
+              "market_cap_krw": null,
+              "return_20_session": "-0.0233196159122085048010973937",
+              "ticker": "263750"
+            },
+            {
+              "annualized_volatility": "0.575683398002",
+              "as_of": "2026-08-07",
+              "close_krw": "8330",
+              "company": "카카오게임즈",
+              "dataset_hash": "sha256:bb61dfffc424ff701038080e5eb6864441b0a78e74257bacc885217799de56c6",
+              "market_cap_krw": null,
+              "return_20_session": "-0.0176886792452830188679245283",
+              "ticker": "293490"
+            }
+          ],
+          "text": "동일 기준일의 reviewed snapshot에서 peer 4개의 수익률과 연환산 변동성을 비교했습니다.",
+          "title": "동종업계 20거래일 비교"
+        },
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:cc8e489ca705f45fcb03261fdf8b26d1246c2a122e9154093c43b81b77b5c2e3",
+              "source_hash": "sha256:9a0549f599ca2bc1df3e171f2be767caa6ba9b1f44b09c0a3231bee125b553a2"
+            },
+            {
+              "citation_id": "sha256:af3eca9c2c8d9d3a967d24f36a6ef8640fabf5d89be6bc3ff83749af06b469b2",
+              "source_hash": "sha256:fdd160a7b27cacde9b97ecff83601b7d8dfce2c8e0224d800fe66ac56ce06efe"
+            }
+          ],
+          "derivation": {
+            "annual_net_income_krw": "347421554268",
+            "financial_period": "2025",
+            "financial_source_hash": "sha256:fdd160a7b27cacde9b97ecff83601b7d8dfce2c8e0224d800fe66ac56ce06efe",
+            "indicative_annual_per": "15.4097792760151523414921435",
+            "market_cap_krw": "5353689467000",
+            "method": "market_cap_divided_by_annual_net_income"
+          },
+          "kind": "indicative_valuation",
+          "observation_id": "sha256:f263543b835a52766cf5d151d0b411e74670576599053f1dd5416941eee8c075",
+          "text": "2026-08-07 시가총액 5,353,689,467,000원을 2025 연간 순이익 347,421,554,268원으로 나눈 참고 PER은 15.4097792760151523414921435배입니다.",
+          "title": "시가총액 기반 참고 PER"
+        }
+      ],
+      "status": "pass_with_limitations",
+      "summary_hash": "sha256:36fe648f66b8ef6ea9ecbdc3ccfbbfa97f8ac7284db70fd3936bcda4ae03b470"
+    },
+    "report": {
+      "observation_count": 1,
+      "observations": [
+        {
+          "citation_refs": [
+            {
+              "citation_id": "sha256:8fb023e3030058a86bb0c35258761adae5cf2d438b539c14c54b7a6180931228",
+              "source_hash": "sha256:2587df943a604f64ad07701ed70c6b4d1d9e95630b0ef854299634bca5076841"
+            }
+          ],
+          "derivation": {
+            "maximum_chars": 520,
+            "method": "contact_safe_bounded_excerpt"
+          },
+          "kind": "report_selected_excerpt",
+          "observation_id": "sha256:1b265a77b0306db89fdadaf8663179de355e968730589a8b8d18f615a1e2e835",
+          "text": "증권사 리포트에서 선택된 근거입니다. 공개 replay에서는 저작권이 있는 원문 발췌와 연락처를 제거하고 페이지·bbox·source hash만 표시합니다.",
+          "title": "리포트 선택 근거"
+        }
+      ],
+      "status": "pass",
+      "summary_hash": "sha256:d5eeeb93d1a38138ae93531af372bb5007ee410f578a3990de10cb0c81efa8b2"
+    }
+  },
+  "axis_counts": {
+    "financial": 6,
+    "legal": 1,
+    "market": 5,
+    "report": 1
+  },
+  "demo_mode": "sanitized_recorded_four_axis_replay",
+  "limitations": [
+    "financial_restatement_and_segment_status_not_verified",
+    "index_data_unavailable",
+    "indicative_per_derived_not_provider_supplied",
+    "legal_direct_applicability_not_established",
+    "market_financial_measurement_window_mismatch",
+    "model_reviewed_human_review_pending",
+    "sanitized_recorded_four_axis_replay_not_live",
+    "single_company_ncsoft_scope",
+    "supported_question_selection_only"
+  ],
+  "live_runtime": false,
+  "recorded_from_schema": "fia.scenario-answer-integrity-preview.v1",
+  "recorded_source_receipt_hash": "sha256:58a176f5c127e706fb2187fbe2e40b70fc606569d40038099f77969c06d5f149",
+  "replay_id": "sha256:db0a28eb2df023db9bb04172143a68102545c082a5e8ef0184e5af52587a3482",
+  "scenarios": [
+    {
+      "answer_status": "pass_with_limitations",
+      "expected_status": "ready",
+      "intent": "combined",
+      "label": "4축 종합 분석",
+      "question": "엔씨소프트의 주요 재무 및 법적 리스크를 근거와 함께 요약해줘.",
+      "scenario_id": "ncsoft-four-axis-combined",
+      "selected_axes": [
+        "report",
+        "financial",
+        "legal",
+        "market"
+      ]
+    },
+    {
+      "answer_status": "pass",
+      "expected_status": "ready",
+      "intent": "report",
+      "label": "증권사 리포트",
+      "question": "엔씨소프트 증권사 리포트의 핵심 전망과 위험을 근거와 함께 보여줘.",
+      "scenario_id": "ncsoft-four-axis-report",
+      "selected_axes": [
+        "report"
+      ]
+    },
+    {
+      "answer_status": "pass",
+      "expected_status": "ready",
+      "intent": "financial",
+      "label": "DART 재무",
+      "question": "엔씨소프트의 최근 재무 추세를 DART 근거와 함께 요약해줘.",
+      "scenario_id": "ncsoft-four-axis-financial",
+      "selected_axes": [
+        "financial"
+      ]
+    },
+    {
+      "answer_status": "pass_with_limitations",
+      "expected_status": "ready",
+      "intent": "legal",
+      "label": "전자금융 규제 적용성",
+      "question": "전자금융 관련 규제가 엔씨소프트에 직접 적용되는가?",
+      "scenario_id": "ncsoft-four-axis-legal-applicability",
+      "selected_axes": [
+        "legal"
+      ]
+    },
+    {
+      "answer_status": "pass_with_limitations",
+      "expected_status": "ready",
+      "intent": "market",
+      "label": "시장·동종업계 비교",
+      "question": "엔씨소프트의 현재 시장가치와 동종업계 비교를 근거와 함께 보여줘.",
+      "scenario_id": "ncsoft-four-axis-market",
+      "selected_axes": [
+        "financial",
+        "market"
+      ]
+    }
+  ],
+  "schema_version": "fia.public-safe-four-axis-replay.v1",
+  "sections": [
+    {
+      "axis": "report",
+      "claims": [
+        {
+          "citation_id": "sha256:8fb023e3030058a86bb0c35258761adae5cf2d438b539c14c54b7a6180931228",
+          "claim_id": "sha256:36bf0183d626b17137a55aba1b6821640cb5013cee157bf88dd39256e1e61950",
+          "locator": {
+            "locator_type": "report_selected_chunk",
+            "value": {
+              "bbox": [
+                0.06252101,
+                0.06936284,
+                0.96142168,
+                0.91943939
+              ],
+              "bbox_units_hash": "sha256:953d1292b6186073973f6bdb5478157904bdbcfead8d7dd95b31aa39250c7976",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "locator_hash": "sha256:00ae6389c7c108723815ad2aaf088c0b597eda38786fdc3d5a48b623be604950",
+              "object_id_hash": "sha256:d7e58876c891f805c61d0d4f95d3e8a354a508a81cfa626492770140c9be835f",
+              "object_type_hash": "sha256:3eb9810d90d9957321787ba381c23730abce62667d462bd8f2ce8917d6dbea63",
+              "original_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "page_number": 1,
+              "selected_chunk_hash": "sha256:160f775059b77dfa7a18a8f438a3ba560a2e47e0715912c780ca90f88dfba842",
+              "source_document_id_hash": "sha256:ffd8bb522fa20812402425f830c03a03268f3a30b07d50e07095a1610956553c",
+              "table_cell_refs_hash": "sha256:806098235a3f39514f44e38e479c29c1c44b06852908d888acf7c132fc70a4a6",
+              "table_header_ref_hashes_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "table_row_ref_hashes_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            }
+          },
+          "source_hash": "sha256:2587df943a604f64ad07701ed70c6b4d1d9e95630b0ef854299634bca5076841",
+          "text": "증권사 리포트에서 선택된 근거입니다. 공개 replay에서는 저작권이 있는 원문 발췌와 연락처를 제거하고 페이지·bbox·source hash만 표시합니다."
+        }
+      ]
+    },
+    {
+      "axis": "financial",
+      "claims": [
+        {
+          "citation_id": "sha256:295a84b6c2fd032735eb5c469d96f00751c5bd30d0acf79e1016802ae3effd66",
+          "claim_id": "sha256:3236e0b94e5d346e1c498b90dc9cd4f92352ab7049cfb1b873b190051eedcf4a",
+          "locator": {
+            "locator_type": "opendart_financial_fact",
+            "value": {
+              "account_id_hash": "sha256:9a9b408b835843aa6268322b5cd854e41762aaf8fa77876af17d175174ec6d86",
+              "cache_artifact_hash": "sha256:3b079f1c047051d323ef3941809f6fe2b2334658eaac6b20cb8ad4e00ff2a321",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "canonical_metric_name_hash": "sha256:ef5b70e27e024c0080a8848b6d13e33b7e7bcb114d6723cfa9f47b7430db028d",
+              "corp_code_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "display_metric": "net_income",
+              "display_period": "2024",
+              "display_unit": "KRW",
+              "display_value": "94115833907",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "filing_scope_hash": "sha256:c928e2bdd90d9beeb65810843ee785e634354bfd092f54150995dfce13d8a4ed",
+              "filing_type_hash": "sha256:3553b3ebba0b8d7c8de3628fa5e4f6748655f38a2e085c3ec92eddf9a3e9637a",
+              "fiscal_year_hash": "sha256:8f3008b4f18b0c7f7c8ebb754933773996fb7208aca1aedeb00ad8e5c64e776f",
+              "original_entity_id_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "period": "2024",
+              "provider_ref_hash": "sha256:bff2a864322e67d0dba7e2dfd736fb03c52dc0d64cefbe7c50185a369162f0f6",
+              "rcept_no_hash": "sha256:86cfd7e232500a4c403a433a838a6186e215b0070861d3d31c6ec0bc69e8f925",
+              "report_code_hash": "sha256:b004f8b40606ef86620a5388084e49a1a68022c09a19d166e35f69c4f0f47eb3",
+              "source_schema_version_hash": "sha256:14a63a905de43463bb62096cde2a305387edb7954a3f38be8e353bc9a982c10b",
+              "source_type_hash": "sha256:99c2840b449d3d8cf7049e428a726032c51d81ed62bbf14a30c257f0f1aee120",
+              "source_url_hash": "sha256:bcb92b9589cb004942c55c7753a2e94c213a20e3e21c3c198a8b9309b8052d70",
+              "statement_type_hash": "sha256:35f458552635eab2d782df152c0fff30fed9b4de4d86856e8e2a1e48ca4784bc"
+            }
+          },
+          "source_hash": "sha256:c1bc38de9ac87c9a243b5de8e7fea160a23bc2fc0b57d618149935865609d746",
+          "text": "선택된 DART 재무 수치 근거입니다. 공개 replay에서는 기간·지표·값과 source hash만 표시합니다."
+        },
+        {
+          "citation_id": "sha256:e194080d33a2d0adaabdf39c643936d2cb23280be6ae9baf3b961339aa437032",
+          "claim_id": "sha256:a7cb0c59f957cdb5eda878671972f89d560b4c48c54333f0483f5a262cf55912",
+          "locator": {
+            "locator_type": "opendart_financial_fact",
+            "value": {
+              "account_id_hash": "sha256:cd16a043726cd0fc45bb102464aadb6944bb63e58c8e2669bc89e40898725eee",
+              "cache_artifact_hash": "sha256:3b079f1c047051d323ef3941809f6fe2b2334658eaac6b20cb8ad4e00ff2a321",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "canonical_metric_name_hash": "sha256:78f89b83e82192b959c45d59cbd8e78d12636dd5c196a6c521b2810eec119e49",
+              "corp_code_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "display_metric": "operating_profit",
+              "display_period": "2024",
+              "display_unit": "KRW",
+              "display_value": "-109215374026",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "filing_scope_hash": "sha256:c928e2bdd90d9beeb65810843ee785e634354bfd092f54150995dfce13d8a4ed",
+              "filing_type_hash": "sha256:3553b3ebba0b8d7c8de3628fa5e4f6748655f38a2e085c3ec92eddf9a3e9637a",
+              "fiscal_year_hash": "sha256:8f3008b4f18b0c7f7c8ebb754933773996fb7208aca1aedeb00ad8e5c64e776f",
+              "original_entity_id_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "period": "2024",
+              "provider_ref_hash": "sha256:bff2a864322e67d0dba7e2dfd736fb03c52dc0d64cefbe7c50185a369162f0f6",
+              "rcept_no_hash": "sha256:86cfd7e232500a4c403a433a838a6186e215b0070861d3d31c6ec0bc69e8f925",
+              "report_code_hash": "sha256:b004f8b40606ef86620a5388084e49a1a68022c09a19d166e35f69c4f0f47eb3",
+              "source_schema_version_hash": "sha256:14a63a905de43463bb62096cde2a305387edb7954a3f38be8e353bc9a982c10b",
+              "source_type_hash": "sha256:99c2840b449d3d8cf7049e428a726032c51d81ed62bbf14a30c257f0f1aee120",
+              "source_url_hash": "sha256:bcb92b9589cb004942c55c7753a2e94c213a20e3e21c3c198a8b9309b8052d70",
+              "statement_type_hash": "sha256:35f458552635eab2d782df152c0fff30fed9b4de4d86856e8e2a1e48ca4784bc"
+            }
+          },
+          "source_hash": "sha256:b99e7f4a62e3ab6c692288f0123151115e08283493588429a87c087ded755b67",
+          "text": "선택된 DART 재무 수치 근거입니다. 공개 replay에서는 기간·지표·값과 source hash만 표시합니다."
+        },
+        {
+          "citation_id": "sha256:9b1cfa16b117fb0aceb5fd3839c3a93ad15eb587e1978760f356a3eb137f5a9b",
+          "claim_id": "sha256:243c22276abc32e12e404f43015d3af92422111a45d456e3e062fc743e5fb7cb",
+          "locator": {
+            "locator_type": "opendart_financial_fact",
+            "value": {
+              "account_id_hash": "sha256:e5d15634640bf7ea576893bf560c87a43926e3b8f1f1c4df30c0eb9d0807beb8",
+              "cache_artifact_hash": "sha256:3b079f1c047051d323ef3941809f6fe2b2334658eaac6b20cb8ad4e00ff2a321",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "canonical_metric_name_hash": "sha256:4241d7207fc79ecb2534f5475b76bcbd4f79b83eb61ded086a376d8c24a09792",
+              "corp_code_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "display_metric": "revenue",
+              "display_period": "2024",
+              "display_unit": "KRW",
+              "display_value": "1578123132867",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "filing_scope_hash": "sha256:c928e2bdd90d9beeb65810843ee785e634354bfd092f54150995dfce13d8a4ed",
+              "filing_type_hash": "sha256:3553b3ebba0b8d7c8de3628fa5e4f6748655f38a2e085c3ec92eddf9a3e9637a",
+              "fiscal_year_hash": "sha256:8f3008b4f18b0c7f7c8ebb754933773996fb7208aca1aedeb00ad8e5c64e776f",
+              "original_entity_id_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "period": "2024",
+              "provider_ref_hash": "sha256:bff2a864322e67d0dba7e2dfd736fb03c52dc0d64cefbe7c50185a369162f0f6",
+              "rcept_no_hash": "sha256:86cfd7e232500a4c403a433a838a6186e215b0070861d3d31c6ec0bc69e8f925",
+              "report_code_hash": "sha256:b004f8b40606ef86620a5388084e49a1a68022c09a19d166e35f69c4f0f47eb3",
+              "source_schema_version_hash": "sha256:14a63a905de43463bb62096cde2a305387edb7954a3f38be8e353bc9a982c10b",
+              "source_type_hash": "sha256:99c2840b449d3d8cf7049e428a726032c51d81ed62bbf14a30c257f0f1aee120",
+              "source_url_hash": "sha256:bcb92b9589cb004942c55c7753a2e94c213a20e3e21c3c198a8b9309b8052d70",
+              "statement_type_hash": "sha256:35f458552635eab2d782df152c0fff30fed9b4de4d86856e8e2a1e48ca4784bc"
+            }
+          },
+          "source_hash": "sha256:f7d7471ea6fdb44305016f98a89c7fb9a89a4594062c46419ca6716e84da4273",
+          "text": "선택된 DART 재무 수치 근거입니다. 공개 replay에서는 기간·지표·값과 source hash만 표시합니다."
+        },
+        {
+          "citation_id": "sha256:af3eca9c2c8d9d3a967d24f36a6ef8640fabf5d89be6bc3ff83749af06b469b2",
+          "claim_id": "sha256:e30cd4b6d0df58a3e7ad38d9e6c84cb00e5d8d11693f18ad74d3b5a2a7adf22b",
+          "locator": {
+            "locator_type": "opendart_financial_fact",
+            "value": {
+              "account_id_hash": "sha256:9a9b408b835843aa6268322b5cd854e41762aaf8fa77876af17d175174ec6d86",
+              "cache_artifact_hash": "sha256:8210d0731ea05bc5cbeee64cd017d050a8b2ca476241e190219a5e4f568ce476",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "canonical_metric_name_hash": "sha256:ef5b70e27e024c0080a8848b6d13e33b7e7bcb114d6723cfa9f47b7430db028d",
+              "corp_code_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "display_metric": "net_income",
+              "display_period": "2025",
+              "display_unit": "KRW",
+              "display_value": "347421554268",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "filing_scope_hash": "sha256:c928e2bdd90d9beeb65810843ee785e634354bfd092f54150995dfce13d8a4ed",
+              "filing_type_hash": "sha256:3553b3ebba0b8d7c8de3628fa5e4f6748655f38a2e085c3ec92eddf9a3e9637a",
+              "fiscal_year_hash": "sha256:10f785c6e4f662128181cf1aa7b39172a90d34faa840224dcb8a717019a21224",
+              "original_entity_id_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "period": "2025",
+              "provider_ref_hash": "sha256:ea4fda4159a11744dd40695009aa8255e5dc48b4a1e9feb8219d1a756499bc65",
+              "rcept_no_hash": "sha256:fc8cb1659ad8e18a37bfde891f23340850089fd1e6a3386bd1ac3dfff70972fc",
+              "report_code_hash": "sha256:b004f8b40606ef86620a5388084e49a1a68022c09a19d166e35f69c4f0f47eb3",
+              "source_schema_version_hash": "sha256:14a63a905de43463bb62096cde2a305387edb7954a3f38be8e353bc9a982c10b",
+              "source_type_hash": "sha256:99c2840b449d3d8cf7049e428a726032c51d81ed62bbf14a30c257f0f1aee120",
+              "source_url_hash": "sha256:13ac75a0eb7a8fc727c3ce08483fe396ab44dfb5be2b4c1bb080bfe90242680f",
+              "statement_type_hash": "sha256:35f458552635eab2d782df152c0fff30fed9b4de4d86856e8e2a1e48ca4784bc"
+            }
+          },
+          "source_hash": "sha256:fdd160a7b27cacde9b97ecff83601b7d8dfce2c8e0224d800fe66ac56ce06efe",
+          "text": "선택된 DART 재무 수치 근거입니다. 공개 replay에서는 기간·지표·값과 source hash만 표시합니다."
+        },
+        {
+          "citation_id": "sha256:49ad50780612524ce3304a6dec38a738aaa17889ef45b836d455d6e6aacc60ab",
+          "claim_id": "sha256:84a274dd04272c67abcae5cb715ac50ca881ec4694321ffc81fe4bd8e5459487",
+          "locator": {
+            "locator_type": "opendart_financial_fact",
+            "value": {
+              "account_id_hash": "sha256:cd16a043726cd0fc45bb102464aadb6944bb63e58c8e2669bc89e40898725eee",
+              "cache_artifact_hash": "sha256:8210d0731ea05bc5cbeee64cd017d050a8b2ca476241e190219a5e4f568ce476",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "canonical_metric_name_hash": "sha256:78f89b83e82192b959c45d59cbd8e78d12636dd5c196a6c521b2810eec119e49",
+              "corp_code_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "display_metric": "operating_profit",
+              "display_period": "2025",
+              "display_unit": "KRW",
+              "display_value": "16078426029",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "filing_scope_hash": "sha256:c928e2bdd90d9beeb65810843ee785e634354bfd092f54150995dfce13d8a4ed",
+              "filing_type_hash": "sha256:3553b3ebba0b8d7c8de3628fa5e4f6748655f38a2e085c3ec92eddf9a3e9637a",
+              "fiscal_year_hash": "sha256:10f785c6e4f662128181cf1aa7b39172a90d34faa840224dcb8a717019a21224",
+              "original_entity_id_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "period": "2025",
+              "provider_ref_hash": "sha256:ea4fda4159a11744dd40695009aa8255e5dc48b4a1e9feb8219d1a756499bc65",
+              "rcept_no_hash": "sha256:fc8cb1659ad8e18a37bfde891f23340850089fd1e6a3386bd1ac3dfff70972fc",
+              "report_code_hash": "sha256:b004f8b40606ef86620a5388084e49a1a68022c09a19d166e35f69c4f0f47eb3",
+              "source_schema_version_hash": "sha256:14a63a905de43463bb62096cde2a305387edb7954a3f38be8e353bc9a982c10b",
+              "source_type_hash": "sha256:99c2840b449d3d8cf7049e428a726032c51d81ed62bbf14a30c257f0f1aee120",
+              "source_url_hash": "sha256:13ac75a0eb7a8fc727c3ce08483fe396ab44dfb5be2b4c1bb080bfe90242680f",
+              "statement_type_hash": "sha256:35f458552635eab2d782df152c0fff30fed9b4de4d86856e8e2a1e48ca4784bc"
+            }
+          },
+          "source_hash": "sha256:cc4e3f5f14d08394810753ab31682c9c10a66146536b082714009298b9d0fa92",
+          "text": "선택된 DART 재무 수치 근거입니다. 공개 replay에서는 기간·지표·값과 source hash만 표시합니다."
+        },
+        {
+          "citation_id": "sha256:cff2bf8d6cd6274436ac0e10033558ee1c4a54c8df6de81de36f768067cfd793",
+          "claim_id": "sha256:0e8ebe07a12be9e388286c324ce87dfe62e0e4d2be52eb7520d1b5fa3ca2a4cd",
+          "locator": {
+            "locator_type": "opendart_financial_fact",
+            "value": {
+              "account_id_hash": "sha256:e5d15634640bf7ea576893bf560c87a43926e3b8f1f1c4df30c0eb9d0807beb8",
+              "cache_artifact_hash": "sha256:8210d0731ea05bc5cbeee64cd017d050a8b2ca476241e190219a5e4f568ce476",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "canonical_metric_name_hash": "sha256:4241d7207fc79ecb2534f5475b76bcbd4f79b83eb61ded086a376d8c24a09792",
+              "corp_code_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "display_metric": "revenue",
+              "display_period": "2025",
+              "display_unit": "KRW",
+              "display_value": "1506925065850",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "filing_scope_hash": "sha256:c928e2bdd90d9beeb65810843ee785e634354bfd092f54150995dfce13d8a4ed",
+              "filing_type_hash": "sha256:3553b3ebba0b8d7c8de3628fa5e4f6748655f38a2e085c3ec92eddf9a3e9637a",
+              "fiscal_year_hash": "sha256:10f785c6e4f662128181cf1aa7b39172a90d34faa840224dcb8a717019a21224",
+              "original_entity_id_hash": "sha256:95871e0c79cd85b520c725f713efea38bb5cbcb425da50b07ca5172e1dfa31ab",
+              "period": "2025",
+              "provider_ref_hash": "sha256:ea4fda4159a11744dd40695009aa8255e5dc48b4a1e9feb8219d1a756499bc65",
+              "rcept_no_hash": "sha256:fc8cb1659ad8e18a37bfde891f23340850089fd1e6a3386bd1ac3dfff70972fc",
+              "report_code_hash": "sha256:b004f8b40606ef86620a5388084e49a1a68022c09a19d166e35f69c4f0f47eb3",
+              "source_schema_version_hash": "sha256:14a63a905de43463bb62096cde2a305387edb7954a3f38be8e353bc9a982c10b",
+              "source_type_hash": "sha256:99c2840b449d3d8cf7049e428a726032c51d81ed62bbf14a30c257f0f1aee120",
+              "source_url_hash": "sha256:13ac75a0eb7a8fc727c3ce08483fe396ab44dfb5be2b4c1bb080bfe90242680f",
+              "statement_type_hash": "sha256:35f458552635eab2d782df152c0fff30fed9b4de4d86856e8e2a1e48ca4784bc"
+            }
+          },
+          "source_hash": "sha256:5fd03c931296186cb1c3bd216895e402e2cb9544c6dcac1c0d7d6824e0af4238",
+          "text": "선택된 DART 재무 수치 근거입니다. 공개 replay에서는 기간·지표·값과 source hash만 표시합니다."
+        }
+      ]
+    },
+    {
+      "axis": "legal",
+      "claims": [
+        {
+          "citation_id": "sha256:a2cefd67d8314019c9384ddedbdb9d229ceeb32c4f7360758809b7c43f27ba76",
+          "claim_id": "sha256:69c44ceb3173b5e4d2ca14cd0590ec937b34be301f6ae52f072888efefa1e06c",
+          "locator": {
+            "locator_type": "regulatory_selected_article",
+            "value": {
+              "article": "제14조의2",
+              "article_locator_hash": "sha256:50a27c4732d422c166e7a6d28d919b9a7c3a08abc4cf3b80c8399fc36d30c193",
+              "article_title_hash": "sha256:43fd630f810b05a8e5fad920715c17e07eb3bae5b484be53a19c25f9729d0fce",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "chapter_hash": "sha256:1373a8bda8c859957e4466c1404351d535b22c3ac8bd1951f04cbb15f97c9717",
+              "clause_locator_hash": "sha256:c444fc78f9e41e9407ecba62d75ebbaeb772ec24834a6574f26db06afbcc7982",
+              "effective_version_hash": "sha256:ebc40d7ac92b3ecdcce1f0267cfe33f24ccc082f59c93f279314300594833046",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "law_name_hash": "sha256:0a1e19bdd0544fc2a8a162874f04ea6fa12f1d8277b602216a49b36472ff5a16",
+              "legal_chunk_id_hash": "sha256:a5d2f795b3431e769ca64fce14137789dbf4679656a9dd174ad8ee817d35db91",
+              "legal_citation_id_hash": "sha256:7fe5f1e80c59c107dd3eeb76ddad3f49ae172e941d369e4bf0c2cab2b56e2aa2",
+              "legal_document_id_hash": "sha256:d65f370b4bd2668403d38cef9a9f84ebb3f024e911eb1aa5c111dd3fb7e1dd46",
+              "original_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "page_end": 11,
+              "page_start": 11,
+              "provision_scope": "main",
+              "qdrant_collection_hash": "sha256:9ed0dbde38897f0e4146265405f1762c22d59dddab68d87f2eac441cd4180be2",
+              "qdrant_payload_hash": "sha256:d9736248d6720d84de73665478e77ca87327a9d08ecf14e6b26916b8b3e5c6d6",
+              "qdrant_point_id_hash": "sha256:e6f365e68ce040ee329f819abc778d6fc9d5ff88e5d0a42421169319944b145a",
+              "scenario_binding_hash": "sha256:a6766c70868aa1cd9597d008337c21f8f7841c26c8d749744dd471cbb1157ba8",
+              "scope_ordinal": 0,
+              "section_hash": "sha256:af79d48ca910ca08e7203727e300a27b0d7204cdc248a013cac5ba6832b5798e",
+              "selected_excerpt_hash": "sha256:73e2a54949414476adc194a365893757e0bb0b66a6d5f56c576e6ab790d09847"
+            }
+          },
+          "source_hash": "sha256:637d48739fea8baf7f05bd2a837bd3182768e04f9b5de459179b7eafd8c77a4b",
+          "text": "선택된 전자금융 관련 조문 근거입니다. 엔씨소프트에 대한 직접 적용성은 이 근거만으로 확정하지 않습니다."
+        }
+      ]
+    },
+    {
+      "axis": "market",
+      "claims": [
+        {
+          "citation_id": "sha256:63909ed6852d260f14ed73c41479eaa9d8eadd0f654ec07a41fa5e999c2a8b6c",
+          "claim_id": "sha256:d0a710de252c7f34ad546f960bf4c3d51f78b0449d3c5ca2319351d31676aa4c",
+          "locator": {
+            "locator_type": "reviewed_market_snapshot",
+            "value": {
+              "as_of": "2026-08-07",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "display_period": "2026-08-07",
+              "display_unit": "ticker_count",
+              "display_value": "4",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "evidence_category": "peer",
+              "observation_count": 4,
+              "original_entity_id_hash": "sha256:ad9d45ce8b6066a32c9ff3e7778f82c1bbfbad2298631c927bb0215dd405605e",
+              "payload_hash": "sha256:2619c147e09d208cfcf0f79204f1a9db1f66be77b7386cdcf3e9472ba31e35b5",
+              "peer_universe_hash": "sha256:60d0c5b2b110fdaea692dfc934ef44449c546702f0d80a70edcf5631ed4d56ae",
+              "source_locator_hash": "sha256:290528a8478bf202c55082c3d638e38799f4b2a26e572b531edb240b88a108c3",
+              "window_hash": "sha256:20ccb3d1c6ef3be0acf3dc63016cbd4b0ffeb7c4ca329fdf7ae02a591c5de486"
+            }
+          },
+          "source_hash": "sha256:b774efb0e547471ea94c8168b9fc6cdc3f5f86d54bf48b18a7c6dce342a6031f",
+          "text": "model-reviewed recorded 시장 근거입니다. 공개 replay에서는 기준일·수익률·변동성·peer·참고 PER의 선택 projection만 표시합니다."
+        },
+        {
+          "citation_id": "sha256:4e048e01b132b4cec065d334aa64c850278c47313b4571408643febec7606d0e",
+          "claim_id": "sha256:28601649348db9559b2522d6050ec4f7e509048bd705271a8d147d26bb3f148f",
+          "locator": {
+            "locator_type": "reviewed_market_snapshot",
+            "value": {
+              "as_of": "2026-08-07",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "display_period": "2026-08-07",
+              "display_unit": "KRW",
+              "display_value": "248500",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "evidence_category": "price",
+              "observation_count": 66,
+              "original_entity_id_hash": "sha256:ad9d45ce8b6066a32c9ff3e7778f82c1bbfbad2298631c927bb0215dd405605e",
+              "payload_hash": "sha256:2619c147e09d208cfcf0f79204f1a9db1f66be77b7386cdcf3e9472ba31e35b5",
+              "source_locator_hash": "sha256:8ae5d40869130166c0d31907fb230fdd60a3ef956f017a6e2550e3e4a7fb054d",
+              "window": 66
+            }
+          },
+          "source_hash": "sha256:d8db14de8e03489b979fad581cc6be104cd7e3858db26891009765fba0aedb39",
+          "text": "model-reviewed recorded 시장 근거입니다. 공개 replay에서는 기준일·수익률·변동성·peer·참고 PER의 선택 projection만 표시합니다."
+        },
+        {
+          "citation_id": "sha256:b05e68338e1ae47781249f59f6cd677d0725bd49192bdbc72431d0e5c4671c17",
+          "claim_id": "sha256:8c245dc3198e017baa3381fc3c45e4cc1b4509d2e803a6f8a58e971cbaf7e891",
+          "locator": {
+            "locator_type": "reviewed_market_snapshot",
+            "value": {
+              "as_of": "2026-08-07",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "display_period": "2026-08-07",
+              "display_unit": "ratio",
+              "display_value": "-0.0040080160320641282565130261",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "evidence_category": "return",
+              "observation_count": 21,
+              "original_entity_id_hash": "sha256:ad9d45ce8b6066a32c9ff3e7778f82c1bbfbad2298631c927bb0215dd405605e",
+              "payload_hash": "sha256:2619c147e09d208cfcf0f79204f1a9db1f66be77b7386cdcf3e9472ba31e35b5",
+              "source_locator_hash": "sha256:136112def56771622d80f96dae1778777566d1ba86694d4c141b8a3f80fefe16",
+              "window": 20
+            }
+          },
+          "source_hash": "sha256:163774842ed7bc3ab4161cf1cdf587e9f41cdfd8806d06d9081ce4ef4198f5ac",
+          "text": "model-reviewed recorded 시장 근거입니다. 공개 replay에서는 기준일·수익률·변동성·peer·참고 PER의 선택 projection만 표시합니다."
+        },
+        {
+          "citation_id": "sha256:cc8e489ca705f45fcb03261fdf8b26d1246c2a122e9154093c43b81b77b5c2e3",
+          "claim_id": "sha256:2371c62b7c53ce5ba1b9eb48db4ecb5d35d135e54938901bf0ce5d860f15ca93",
+          "locator": {
+            "locator_type": "reviewed_market_snapshot",
+            "value": {
+              "as_of": "2026-08-07",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "dataset_hash": "sha256:319896ecd93085793f31f6131b31d587b6b99ee33ec591fed3ba82193dbe11ae",
+              "display_period": "2026-08-07",
+              "display_unit": "multiple",
+              "display_value": "{\"indicative_annual_per\":\"15.40977928\"}",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "evidence_category": "valuation",
+              "financial_evidence_id_hash": "sha256:3ff9f008fa276adbc96d6b3396eca2893979d0046c2008c41b3e6de2ef517722",
+              "financial_payload_hash": "sha256:8210d0731ea05bc5cbeee64cd017d050a8b2ca476241e190219a5e4f568ce476",
+              "financial_period_hash": "sha256:10f785c6e4f662128181cf1aa7b39172a90d34faa840224dcb8a717019a21224",
+              "financial_review_manifest_hash": "sha256:7be567acf5984b3eec8606fd9f6f5cce9d08722bfc18eaa68a4248c698baf878",
+              "financial_source_hash": "sha256:fdd160a7b27cacde9b97ecff83601b7d8dfce2c8e0224d800fe66ac56ce06efe",
+              "market_cap_projection_hash": "sha256:881abd769c822ee8c72a2d6f912ac9ee55b726b8aa90033f95151f8be780b6a1",
+              "observation_count": 1,
+              "original_entity_id_hash": "sha256:ad9d45ce8b6066a32c9ff3e7778f82c1bbfbad2298631c927bb0215dd405605e",
+              "payload_hash": "sha256:2619c147e09d208cfcf0f79204f1a9db1f66be77b7386cdcf3e9472ba31e35b5",
+              "review_manifest_hash": "sha256:4292e022828a101afb9551ab8e04fe095e1c8fd422d213692d86b1b991df754e",
+              "selection_hash": "sha256:30df9382a58cd96ec39dab60a0e3bdad91135210274bd7683c76d843c85bda14",
+              "snapshot_hash": "sha256:eb949f3f288aae835f50c85b6883fdc00b3c1f19bcae7bf37d6980a3d2f8c006",
+              "source_artifact_hash": "sha256:c30292ddd6224d3d4fd6dd0d9d0642f1ec5e9a0ca0116677666a00be3f9b4150",
+              "source_locator_hash": "sha256:1d241e540d5e1be805506ad5c9d5f3cbeddf9e179e755ae4efea5e7d6129fab7",
+              "valuation_derivation_hash": "sha256:cde097ff883a4b3bf87961b60f73bea4c9a448e7e26c498029f354e728ae1f0f",
+              "window_hash": "sha256:20ccb3d1c6ef3be0acf3dc63016cbd4b0ffeb7c4ca329fdf7ae02a591c5de486"
+            }
+          },
+          "source_hash": "sha256:9a0549f599ca2bc1df3e171f2be767caa6ba9b1f44b09c0a3231bee125b553a2",
+          "text": "model-reviewed recorded 시장 근거입니다. 공개 replay에서는 기준일·수익률·변동성·peer·참고 PER의 선택 projection만 표시합니다."
+        },
+        {
+          "citation_id": "sha256:9855a84707650dbb13b4706488843efe741eb7b89e669cf667a7644e74d98f8f",
+          "claim_id": "sha256:9ae7b673fb51f81401248d5afbc8ea1173d12fa95680875f52f21efe10367e3f",
+          "locator": {
+            "locator_type": "reviewed_market_snapshot",
+            "value": {
+              "as_of": "2026-08-07",
+              "canonical_entity_id_hash": "sha256:50cd8d75abf24365e576759fa0f6f8259fef9bc4762783d304bb59a3fb109c21",
+              "display_period": "2026-08-07",
+              "display_unit": "annualized_ratio",
+              "display_value": "0.460252138865",
+              "entity_binding_hash": "sha256:58f1fda7672eed680e0faf43a328deb9b37a68f38dede83d83b50457fd2c5b10",
+              "evidence_category": "volatility",
+              "observation_count": 21,
+              "original_entity_id_hash": "sha256:ad9d45ce8b6066a32c9ff3e7778f82c1bbfbad2298631c927bb0215dd405605e",
+              "payload_hash": "sha256:2619c147e09d208cfcf0f79204f1a9db1f66be77b7386cdcf3e9472ba31e35b5",
+              "source_locator_hash": "sha256:94cad6c05d864a1d8623b1f2efdead862b2884c26318c0a9fb0e593de4b8a81a",
+              "window": 20
+            }
+          },
+          "source_hash": "sha256:310bb0f1bafe4f81ff958837b118c471bac1cd2f3300d4ccfc3be275159f8d10",
+          "text": "model-reviewed recorded 시장 근거입니다. 공개 replay에서는 기준일·수익률·변동성·peer·참고 PER의 선택 projection만 표시합니다."
+        }
+      ]
+    }
+  ],
+  "side_effect_counters": {
+    "db_write_count": 0,
+    "final_answer_call_count": 0,
+    "llm_call_count": 0,
+    "network_call_count": 0,
+    "provider_call_count": 0,
+    "vector_write_count": 0
+  },
+  "status": "ready",
+  "unsupported_claim_count": 0
+}
