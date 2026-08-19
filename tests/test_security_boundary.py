@@ -37,6 +37,19 @@ class SecurityBoundaryTests(unittest.TestCase):
     def test_candidate_contains_no_symlink(self) -> None:
         self.assertFalse(any(path.is_symlink() for path in ROOT.rglob("*")))
 
+    def test_docker_runtime_uses_explicit_copy_and_non_root_user(self) -> None:
+        dockerfile = (ROOT / "Dockerfile").read_text(encoding="utf-8")
+        self.assertIn("USER fia", dockerfile)
+        self.assertNotRegex(dockerfile, r"(?m)^COPY\s+\.\s")
+        self.assertIn("COPY --chown=fia:fia src/fia_public", dockerfile)
+
+    def test_compose_runtime_is_loopback_read_only_and_capability_dropped(self) -> None:
+        compose = (ROOT / "compose.yaml").read_text(encoding="utf-8")
+        self.assertIn('"127.0.0.1:${FIA_PORTFOLIO_PORT}:8765"', compose)
+        self.assertIn("read_only: true", compose)
+        self.assertIn("- ALL", compose)
+        self.assertIn("no-new-privileges:true", compose)
+
 
 if __name__ == "__main__":
     unittest.main()

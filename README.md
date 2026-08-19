@@ -3,6 +3,8 @@
 근거를 잃지 않고 금융 리포트, 공시 재무, 규제 근거, 시장 지표를 하나의
 질문별 결과로 조립하는 포트폴리오 프로토타입입니다.
 
+![Financial Insight Agent architecture](docs/assets/architecture.svg)
+
 이 공개 후보는 승인된 비식별 recorded replay만 읽습니다. 실행 중 외부 데이터
 provider, 네트워크 API, 생성 모델을 호출하지 않으며 파일이나 데이터베이스에
 결과를 쓰지 않습니다.
@@ -59,6 +61,12 @@ python -I run.py serve --port 8765
 브라우저에서 `http://127.0.0.1:8765/`을 열면 질문 선택형 UI를 확인할 수
 있습니다. 로컬 서버는 GET 요청만 허용합니다.
 
+Docker는 private artifact 없이 loopback에만 바인딩됩니다.
+
+```powershell
+docker compose --env-file docker/portfolio.env.example up --build
+```
+
 ## 검증
 
 ```powershell
@@ -77,3 +85,5 @@ semantic QA, 실시간 또는 주기적 데이터 갱신, 지수 분석, 법적 
 구조와 핵심 진입점은 [docs/architecture.md](docs/architecture.md), 공개 주장
 경계는 [CLAIM_BOUNDARY.md](CLAIM_BOUNDARY.md), 보안 정책은
 [SECURITY.md](SECURITY.md)에서 확인할 수 있습니다.
+
+5분 시연 순서는 [PORTFOLIO_WALKTHROUGH.md](PORTFOLIO_WALKTHROUGH.md)를 참고합니다.

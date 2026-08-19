@@ -1,5 +1,7 @@
 # Architecture
 
+![Financial Insight Agent architecture](assets/architecture.svg)
+
 공개 후보는 승인된 recorded replay를 immutable input으로 취급합니다. 질문은
 controlled router를 통과한 뒤 해당 intent에 필요한 근거 축만 선택됩니다.
 답변 문장은 replay에 포함된 citation-bound observation만 렌더링합니다.
