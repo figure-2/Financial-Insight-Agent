@@ -58,3 +58,22 @@ flowchart LR
 PostgreSQL 연결이나 암호화된 질문 payload를 포함하지 않으며, 원 질문 대신 hash-safe
 identity만 다룹니다. 이를 통해 중복 요청 단일화, lease loss, terminal reason, restart
 recovery 계약을 외부 서비스 없이 재현합니다.
+
+## Report RAG 보안·검색 경계
+
+```mermaid
+flowchart LR
+    P["Untrusted PDF metadata"] --> Q["Quarantine checks"]
+    Q -->|"validated"| X["Parser boundary"]
+    Q -->|"unsafe"| B["Reject without promotion"]
+    V["Vector hit"] --> C["Canonical chunk readback"]
+    C --> L["Company · source · lineage gate"]
+    L --> E["Question-scoped Report Evidence"]
+```
+
+- `src/fia_public/pdf_security.py`: host, MIME, signature, size, active content, resource limit 계약
+- `src/fia_public/report_retrieval.py`: vector score와 별개인 company·chunk·lineage hard gate
+
+공개 코드는 parser나 embedding model을 다시 구현하지 않습니다. 입력 검증과 canonical
+readback이 통과한 synthetic chunk만 질문 hash에 결박된 Evidence로 선택하며, 원문 PDF와
+실제 vector는 포함하지 않습니다.
