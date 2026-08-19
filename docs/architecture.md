@@ -77,3 +77,14 @@ flowchart LR
 공개 코드는 parser나 embedding model을 다시 구현하지 않습니다. 입력 검증과 canonical
 readback이 통과한 synthetic chunk만 질문 hash에 결박된 Evidence로 선택하며, 원문 PDF와
 실제 vector는 포함하지 않습니다.
+
+## Financial Evidence 정규화
+
+`src/fia_public/financial_pipeline.py`는 company/ticker 결박, fiscal period,
+report code, 연결·별도, metric, unit, receipt version을 하나의 immutable Evidence로
+정규화합니다. 숫자 문자열은 ID 생성 전에 canonical decimal로 변환하므로 표현 형식이
+달라도 같은 공시 fact는 같은 Evidence identity를 가집니다.
+
+Financial freshness는 Report의 일수 TTL을 복사하지 않습니다. 저장 receipt와 최신
+receipt version이 일치하고 source check가 성공한 경우에만 fresh로 판정합니다. 공개
+테스트는 synthetic 값만 사용하며 실제 공시 payload나 corpCode를 포함하지 않습니다.

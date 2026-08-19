@@ -26,6 +26,10 @@ Report 공개 파이프라인은 비신뢰 PDF의 parser 진입 조건과 vector
 readback을 분리합니다. 검색 점수만으로 Evidence를 승인하지 않고 company·source
 hash·chunk lineage·promotion 상태를 모두 확인한 뒤 질문별 citation locator를 만듭니다.
 
+Financial 공개 파이프라인은 company/ticker, 기간, 공시 유형, 연결·별도, metric,
+unit과 receipt version을 보존합니다. 재무 freshness는 Report TTL과 분리되며 공시
+version이 달라지면 stale로 판정합니다.
+
 공개 replay는 엔씨소프트 한 기업과 다섯 가지 controlled intent만 지원합니다.
 질문 표현을 지원 범위에 매핑할 수 없거나 두 intent가 섞이면 추측하지 않고
 차단합니다.
