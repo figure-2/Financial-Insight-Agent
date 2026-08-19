@@ -34,6 +34,10 @@ Market 공개 파이프라인은 61~66개 ordered OHLCV row를 검증한 뒤 dat
 20/60-session return, annualized volatility, SMA20/SMA60을 결정적으로 계산합니다.
 포함된 테스트 시계열은 synthetic이며 실제 시장 데이터로 표시하지 않습니다.
 
+Storage reconciliation은 canonical chunk와 vector projection metadata를 대조해 active
+missing, orphan, lineage mismatch, no-reembedding rebuild 가능 여부와 복구 불가능한
+legacy quarantine을 분리합니다. 양쪽 readback 전에는 Evidence를 ready로 승격하지 않습니다.
+
 공개 replay는 엔씨소프트 한 기업과 다섯 가지 controlled intent만 지원합니다.
 질문 표현을 지원 범위에 매핑할 수 없거나 두 intent가 섞이면 추측하지 않고
 차단합니다.
