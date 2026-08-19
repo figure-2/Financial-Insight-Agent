@@ -13,6 +13,8 @@
 - 지원하지 않는 기업·질문과 모호한 질문은 reason-only 차단
 - 결과의 파일·데이터베이스 영구 저장 없음
 - citation과 source hash가 없는 observation 차단
+- Docker non-root user, read-only filesystem, capability drop, loopback bind
+- vector hit의 company·source·lineage canonical readback
 
 보안 문제를 발견한 경우 공개 이슈에 민감한 값을 붙이지 말고 저장소 소유자에게
 비공개 채널로 알리십시오.
