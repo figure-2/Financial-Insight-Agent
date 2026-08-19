@@ -30,6 +30,10 @@ Financial 공개 파이프라인은 company/ticker, 기간, 공시 유형, 연�
 unit과 receipt version을 보존합니다. 재무 freshness는 Report TTL과 분리되며 공시
 version이 달라지면 stale로 판정합니다.
 
+Market 공개 파이프라인은 61~66개 ordered OHLCV row를 검증한 뒤 dataset hash와
+20/60-session return, annualized volatility, SMA20/SMA60을 결정적으로 계산합니다.
+포함된 테스트 시계열은 synthetic이며 실제 시장 데이터로 표시하지 않습니다.
+
 공개 replay는 엔씨소프트 한 기업과 다섯 가지 controlled intent만 지원합니다.
 질문 표현을 지원 범위에 매핑할 수 없거나 두 intent가 섞이면 추측하지 않고
 차단합니다.
