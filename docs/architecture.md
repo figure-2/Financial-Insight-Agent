@@ -30,3 +30,25 @@ flowchart LR
 
 `portfolio_risk.py`는 알고리즘 경계만 공개하며 recorded replay에 없는 시계열을
 만들어내거나 UI 결과로 표시하지 않습니다.
+
+## 범용 runtime 계약
+
+공개 코드는 private company catalog 없이도 다음 orchestration 경계를 실행 가능한
+순수 계약으로 보여줍니다.
+
+```mermaid
+flowchart LR
+    I["회사명 · ticker · alias"] --> C["Canonical company resolution"]
+    C -->|"ambiguous"| Q["clarification_required"]
+    C -->|"resolved"| F["Report freshness"]
+    F -->|"fresh / negative cache"| H["Provider call 0"]
+    F -->|"missing / stale"| J["Acquisition required"]
+    F -->|"corrupt / lineage mismatch"| B["Fail closed"]
+```
+
+- `src/fia_public/company_runtime.py`: catalog-backed exact resolution과 ambiguity 계약
+- `src/fia_public/freshness.py`: Report 전용 7~14일 freshness와 negative cache 계약
+
+실제 상장사 catalog, provider credential, private cache는 공개 저장소에 포함하지
+않습니다. 테스트의 회사는 계약 검증용 synthetic record이며 actual 분석 성공으로
+계산하지 않습니다.
