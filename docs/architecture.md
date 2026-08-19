@@ -48,7 +48,13 @@ flowchart LR
 
 - `src/fia_public/company_runtime.py`: catalog-backed exact resolution과 ambiguity 계약
 - `src/fia_public/freshness.py`: Report 전용 7~14일 freshness와 negative cache 계약
+- `src/fia_public/durable_runtime.py`: request idempotency, lease, revision, restart snapshot 상태 머신
 
 실제 상장사 catalog, provider credential, private cache는 공개 저장소에 포함하지
 않습니다. 테스트의 회사는 계약 검증용 synthetic record이며 actual 분석 성공으로
 계산하지 않습니다.
+
+공개 durable repository는 storage-neutral reference implementation입니다. 실제 서비스의
+PostgreSQL 연결이나 암호화된 질문 payload를 포함하지 않으며, 원 질문 대신 hash-safe
+identity만 다룹니다. 이를 통해 중복 요청 단일화, lease loss, terminal reason, restart
+recovery 계약을 외부 서비스 없이 재현합니다.
