@@ -13,6 +13,11 @@ provider, 네트워크 API, 생성 모델을 호출하지 않으며 파일이나
 - **Financial & Regulatory Evidence**: 공시 수치의 기간·지표와 법령 조문 locator를 유지합니다.
 - **Market & Portfolio Analytics**: 가격·수익률·변동성·peer·valuation 근거를 질문별로 투영합니다.
 
+공개 코드에는 recorded replay 외에도 특정 기업을 하드코딩하지 않는 canonical company
+resolution과 Report freshness 계약이 포함됩니다. 이 계약은 exact name·ticker·alias,
+모호성 반환, fresh/stale/missing/negative-cache 상태 전이를 dependency-free 테스트로
+검증하지만 실제 provider를 호출하거나 private catalog를 포함하지 않습니다.
+
 공개 replay는 엔씨소프트 한 기업과 다섯 가지 controlled intent만 지원합니다.
 질문 표현을 지원 범위에 매핑할 수 없거나 두 intent가 섞이면 추측하지 않고
 차단합니다.
