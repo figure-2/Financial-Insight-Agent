@@ -38,6 +38,11 @@ Storage reconciliation은 canonical chunk와 vector projection metadata를 대�
 missing, orphan, lineage mismatch, no-reembedding rebuild 가능 여부와 복구 불가능한
 legacy quarantine을 분리합니다. 양쪽 readback 전에는 Evidence를 ready로 승격하지 않습니다.
 
+Integrated service는 세 capability의 ready 축만 조립합니다. Report forecast와 Financial
+actual은 양쪽 citation이 있는 structured descriptor로만 비교하며, 원인·투자 판단을 새로
+추론하지 않습니다. generic service test는 exact/ambiguous company resolution, 즉시 cache
+결과, idempotent 202 job, candidate tamper 차단을 synthetic 상태로 검증합니다.
+
 공개 replay는 엔씨소프트 한 기업과 다섯 가지 controlled intent만 지원합니다.
 질문 표현을 지원 범위에 매핑할 수 없거나 두 intent가 섞이면 추측하지 않고
 차단합니다.
