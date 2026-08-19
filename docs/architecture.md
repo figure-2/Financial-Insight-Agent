@@ -109,3 +109,18 @@ orphan point, payload lineage mismatch, 보존 vector 기반 no-reembedding rebu
 Evidence ready는 active canonical row와 vector projection의 company·source·lineage가
 일치할 때만 허용됩니다. 공개 구현은 실제 DB나 vector 값을 포함하지 않고 reconciliation
 결정 알고리즘만 제공합니다.
+
+## 통합 분석과 generic service
+
+`src/fia_public/integrated_analysis.py`는 요청 축의 `analysis_ready`, `ready_partial`,
+`failed_no_ready_axis` 상태를 계산합니다. Report forecast와 Financial actual은 metric과
+unit이 같고 양쪽 Evidence/citation에 결박된 structured descriptor가 있을 때만
+`direction_consistent` 또는 `direction_divergent` 관찰을 생성합니다.
+
+`src/fia_public/service_runtime.py`는 canonical company resolution 이후 terminal Evidence가
+모두 있으면 즉시 결과를 반환하고, missing 축이 있으면 질문 hash·회사·축·기준일로
+idempotent job 하나를 생성합니다. 모호한 회사는 candidate 선택 전까지 409 상태이며,
+후보 목록 밖 ID 주입은 차단됩니다.
+
+이 service test는 synthetic registry와 Evidence를 사용하는 orchestration 검증입니다.
+실제 다기업 provider 수집이나 production API 성공으로 계산하지 않습니다.
