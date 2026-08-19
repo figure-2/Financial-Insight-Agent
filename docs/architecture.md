@@ -98,3 +98,14 @@ rows만 dataset hash, 20/60-session return, annualized volatility, SMA20/SMA60 �
 
 provider endpoint와 credential은 공개 범위가 아닙니다. 테스트 시계열은 알고리즘
 검증용 synthetic data이며 실제 종목 성과나 live KRX 성공으로 표현하지 않습니다.
+
+## Canonical storage reconciliation
+
+`src/fia_public/storage_reconciliation.py`는 PostgreSQL-style canonical chunk와
+Qdrant-style vector projection metadata를 비교합니다. active missing projection,
+orphan point, payload lineage mismatch, 보존 vector 기반 no-reembedding rebuild,
+복구 불가능한 unreferenced legacy quarantine을 서로 다른 상태로 분류합니다.
+
+Evidence ready는 active canonical row와 vector projection의 company·source·lineage가
+일치할 때만 허용됩니다. 공개 구현은 실제 DB나 vector 값을 포함하지 않고 reconciliation
+결정 알고리즘만 제공합니다.
