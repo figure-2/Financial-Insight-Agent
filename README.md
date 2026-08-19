@@ -22,6 +22,10 @@ storage-neutral durable runtime은 질문 hash와 분석 범위로 idempotent jo
 lease·revision·허용 상태 전이·restart snapshot을 검증합니다. 공개 구현은 실제
 PostgreSQL adapter가 아니라 운영 상태 계약을 재현하는 reference implementation입니다.
 
+Report 공개 파이프라인은 비신뢰 PDF의 parser 진입 조건과 vector hit의 canonical
+readback을 분리합니다. 검색 점수만으로 Evidence를 승인하지 않고 company·source
+hash·chunk lineage·promotion 상태를 모두 확인한 뒤 질문별 citation locator를 만듭니다.
+
 공개 replay는 엔씨소프트 한 기업과 다섯 가지 controlled intent만 지원합니다.
 질문 표현을 지원 범위에 매핑할 수 없거나 두 intent가 섞이면 추측하지 않고
 차단합니다.
