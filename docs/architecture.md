@@ -88,3 +88,13 @@ report code, 연결·별도, metric, unit, receipt version을 하나의 immutabl
 Financial freshness는 Report의 일수 TTL을 복사하지 않습니다. 저장 receipt와 최신
 receipt version이 일치하고 source check가 성공한 경우에만 fresh로 판정합니다. 공개
 테스트는 synthetic 값만 사용하며 실제 공시 payload나 corpCode를 포함하지 않습니다.
+
+## Market Evidence 계산
+
+`src/fia_public/market_pipeline.py`는 caller-supplied 61~66개 OHLCV row의 ticker,
+session ordering, 중복, 가격 관계, finite value를 먼저 검증합니다. 검증된 canonical
+rows만 dataset hash, 20/60-session return, annualized volatility, SMA20/SMA60 계산에
+사용됩니다.
+
+provider endpoint와 credential은 공개 범위가 아닙니다. 테스트 시계열은 알고리즘
+검증용 synthetic data이며 실제 종목 성과나 live KRX 성공으로 표현하지 않습니다.
