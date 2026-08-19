@@ -18,6 +18,10 @@ resolution과 Report freshness 계약이 포함됩니다. 이 계약은 exact na
 모호성 반환, fresh/stale/missing/negative-cache 상태 전이를 dependency-free 테스트로
 검증하지만 실제 provider를 호출하거나 private catalog를 포함하지 않습니다.
 
+storage-neutral durable runtime은 질문 hash와 분석 범위로 idempotent job을 만들고,
+lease·revision·허용 상태 전이·restart snapshot을 검증합니다. 공개 구현은 실제
+PostgreSQL adapter가 아니라 운영 상태 계약을 재현하는 reference implementation입니다.
+
 공개 replay는 엔씨소프트 한 기업과 다섯 가지 controlled intent만 지원합니다.
 질문 표현을 지원 범위에 매핑할 수 없거나 두 intent가 섞이면 추측하지 않고
 차단합니다.
