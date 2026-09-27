@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FIA · 기업에게 질문하기</title>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script type="module" src="/assets/chat.mjs"></script>
+</head>
+<body class="chat-page">
+  <a class="skip-link" href="#question">질문 입력으로 이동</a>
+  <header class="chat-header"><a class="brand" href="/" aria-label="FIA 홈"><span class="brand-mark">F</span><span>FIA<small>FINANCIAL INSIGHT AGENT</small></span></a><div class="header-actions"><button id="mobile-new-chat" class="mobile-new-chat" type="button">새 대화</button><span class="badge">예시 데이터</span><a href="/">서비스 소개 <span aria-hidden="true">↗</span></a></div></header>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="대화 메뉴"><button id="new-chat" class="new-chat" type="button">＋ 새 대화</button><h2>리서치 시작하기</h2><nav class="lane-links" aria-label="질문 유형"><button type="button" data-topic="report"><span>01</span> 증권 리포트</button><button type="button" data-topic="financial"><span>02</span> 재무 · 법령</button><button type="button" data-topic="market"><span>03</span> 시장 흐름</button></nav><h2>이번 대화</h2><ol id="history" class="history"><li class="history-empty">질문하면 대화가 여기에 표시됩니다.</li></ol><div class="sidebar-note"><span class="dot"></span> 게스트 체험<p>대화는 이 탭에서만 유지됩니다.<br>새로고침하면 새 대화가 시작됩니다.</p></div></aside>
+    <main class="chat-main"><div class="context-bar"><div><span class="company-icon">A</span><strong>가상기업 A</strong><span class="muted">기준일 2026-09-10</span></div><span class="context-mode">합성 시나리오</span></div>
+      <div id="conversation" class="conversation">
+        <section id="welcome" class="welcome"><span class="eyebrow">ASK FIA</span><h1>어떤 근거가 궁금하신가요?</h1><p>실적부터 증권사 의견, 주가 흐름까지.<br>질문하면 예시 자료를 골라 출처와 함께 답합니다.</p><div class="suggestion-grid"><button type="button" data-topic="report"><span>증권 리포트</span>증권사 의견과 근거는? <b aria-hidden="true">↗</b></button><button type="button" data-topic="financial"><span>재무 · 법령</span>실적과 관련 법령은? <b aria-hidden="true">↗</b></button><button type="button" data-topic="market"><span>시장 흐름</span>최근 주가 흐름은? <b aria-hidden="true">↗</b></button></div></section>
+        <div id="messages" role="log" aria-label="질문과 답변" aria-live="polite" aria-relevant="additions"></div>
+      </div>
+      <div class="composer-wrap"><p id="app-status" class="app-status" role="status">예시 자료를 준비하고 있습니다.</p><form id="chat-form" class="composer"><label class="sr-only" for="question">가상기업 A에 대한 질문</label><textarea id="question" rows="2" maxlength="600" placeholder="가상기업 A에 대해 궁금한 것을 질문하세요" required></textarea><button id="send" type="submit" aria-label="질문 보내기" disabled>↑</button></form><p class="composer-help">가상기업 A의 합성 자료로 답합니다. 외부 API·생성 모델 호출 없이 이 탭에서 처리합니다.</p></div>
+    </main>
+  </div>
+  <dialog id="source-dialog" aria-labelledby="source-title"><div class="dialog-heading"><span class="eyebrow">SOURCE / 예시 출처</span><button id="close-source" type="button" aria-label="출처 닫기">×</button></div><h2 id="source-title"></h2><p id="source-meta" class="source-meta"></p><blockquote id="source-excerpt"></blockquote><p class="dialog-note">화면 체험을 위해 만든 합성 자료입니다.</p></dialog>
+</body>
+</html>

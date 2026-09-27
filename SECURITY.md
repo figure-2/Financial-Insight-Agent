@@ -1,20 +1,23 @@
-# Security
+# 실행 보안
 
-## 공개 데이터 경계
+## 로컬 홈페이지와 채팅
 
-공개 replay에는 선택된 근거 projection과 hash-safe locator만 포함합니다.
-원문 PDF, provider 원응답, credential, 사용자 경로, 연락처, 세션 정보는
-포함하지 않습니다.
+- 서버는 loopback 주소에서 실행하며 명시한 HTML·CSS·JavaScript·JSON 파일만 제공합니다.
+- 채팅은 합성 데이터를 사용합니다. 질문을 외부 API나 생성 모델로 전송하지 않습니다.
+- 질문과 답변은 탭 메모리에만 유지합니다. localStorage·쿠키·서버 대화 저장을 사용하지 않습니다.
+- 사용자 문장은 HTML로 해석하지 않고 텍스트 노드로 렌더링합니다.
+- Content Security Policy로 스크립트·연결 대상을 같은 출처로 제한하고 프레임 삽입을 차단합니다.
+- 채팅 입력은 600자, 한 대화는 20턴으로 제한합니다.
 
-## 실행 경계
+이 서버는 로컬 시연용입니다. 인터넷 공개 운영을 위한 인증·사용량 제한·TLS 구성을 제공하지 않습니다.
+화면에 민감한 정보를 입력하지 마십시오.
 
-- 데모 실행 중 외부 provider와 생성 모델 호출 없음
-- GET 이외 HTTP method 차단
-- 지원하지 않는 기업·질문과 모호한 질문은 reason-only 차단
-- 결과의 파일·데이터베이스 영구 저장 없음
-- citation과 source hash가 없는 observation 차단
-- Docker non-root user, read-only filesystem, capability drop, loopback bind
-- vector hit의 company·source·lineage canonical readback
+## Python 근거 처리
 
-보안 문제를 발견한 경우 공개 이슈에 민감한 값을 붙이지 말고 저장소 소유자에게
-비공개 채널로 알리십시오.
+저장 사례의 근거는 schema·출처 해시·위치 정보를 검사합니다.
+검색 후보는 회사·원본 청크·출처 일치 조건과 별도로 순위를 다룹니다.
+파일 경로를 URL에서 임의로 지정할 수 없으며 POST 요청은 허용하지 않습니다.
+
+Docker는 non-root 사용자로 실행하고, Compose에는 읽기 전용 파일시스템과 capability 제한을 설정했습니다.
+
+보안 문제를 발견하면 공개 이슈에 민감한 내용을 붙이지 말고 저장소 소유자에게 비공개로 알려 주십시오.

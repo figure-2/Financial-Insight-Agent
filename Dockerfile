@@ -11,6 +11,7 @@ RUN useradd --create-home --uid 10001 fia \
 
 COPY --chown=fia:fia run.py /app/run.py
 COPY --chown=fia:fia demo /app/demo
+COPY --chown=fia:fia web /app/web
 COPY --chown=fia:fia src/fia_public /app/src/fia_public
 
 USER fia

@@ -1,4 +1,4 @@
-"""GET-only local API and HTML UI for the public recorded replay."""
+"""GET-only website, synthetic chat assets, and recorded example API."""
 
 from __future__ import annotations
 
@@ -17,6 +17,17 @@ from .evidence_assembly import EvidenceAssembler
 
 ROOT = Path(__file__).resolve().parents[2]
 REPLAY_PATH = ROOT / "demo" / "ncsoft-four-axis-replay.json"
+PUBLIC_FILES = {
+    "/": (ROOT / "web" / "index.html", "text/html; charset=utf-8"),
+    "/chat": (ROOT / "web" / "chat.html", "text/html; charset=utf-8"),
+    "/assets/app.css": (ROOT / "web" / "app.css", "text/css; charset=utf-8"),
+    "/assets/chat.mjs": (ROOT / "web" / "chat.mjs", "text/javascript; charset=utf-8"),
+    "/assets/chat-engine.mjs": (ROOT / "web" / "chat-engine.mjs", "text/javascript; charset=utf-8"),
+    "/assets/scenarios.json": (
+        ROOT / "demo" / "chat-scenarios.json",
+        "application/json; charset=utf-8",
+    ),
+}
 
 
 class DemoError(ValueError):
@@ -30,7 +41,10 @@ class PublicDemoApp:
     def handle(self, method: str, path: str, query: Mapping[str, str]) -> tuple[int, str, str]:
         if method.upper() != "GET":
             return 405, "text/html; charset=utf-8", _error_page("method_not_allowed")
-        if path == "/":
+        if path in PUBLIC_FILES:
+            source, media_type = PUBLIC_FILES[path]
+            return 200, media_type, source.read_text(encoding="utf-8")
+        if path == "/replay":
             return 200, "text/html; charset=utf-8", _landing_page(self.assembler.scenarios)
         if path not in {"/analysis", "/api/analysis"}:
             return 404, "text/html; charset=utf-8", _error_page("route_not_found")
@@ -128,6 +142,12 @@ def _serve(app: PublicDemoApp, port: int) -> None:
             self.send_header("Content-Length", str(len(payload)))
             self.send_header("Cache-Control", "no-store")
             self.send_header("X-Content-Type-Options", "nosniff")
+            self.send_header("Referrer-Policy", "no-referrer")
+            self.send_header(
+                "Content-Security-Policy",
+                "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
+                "connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+            )
             self.end_headers()
             self.wfile.write(payload)
 
@@ -144,7 +164,7 @@ def _serve(app: PublicDemoApp, port: int) -> None:
             return
 
     server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
-    print(f"ready http://127.0.0.1:{port}/")
+    print(f"ready http://127.0.0.1:{port}/", flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

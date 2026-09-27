@@ -1,5 +1,29 @@
 # Architecture
 
+## 홈페이지와 채팅
+
+현재 기본 화면은 `/`의 홈페이지와 `/chat`의 합성 데이터 채팅입니다.
+Python HTTP 서버는 명시한 파일만 제공하고, 채팅 질문과 답변은 브라우저에서 처리합니다.
+
+```mermaid
+flowchart LR
+    H[홈페이지] --> C[채팅 화면]
+    Q[질문 · 직전 질문 유형] --> R[chat-engine.mjs]
+    D[chat-scenarios.json] --> R
+    R --> V[chat.mjs]
+    V --> O[답변 · 계산 · 차트 · 출처]
+```
+
+`chat-engine.mjs`는 제한된 키워드 분기와 결정론적 답변 구성을 담당합니다.
+`chat.mjs`는 탭 메모리에 최대 20턴을 유지하며 DOM 텍스트로 렌더링합니다.
+출처 창의 제목·발행일·위치·원문 예시는 같은 합성 데이터의 source key에 연결됩니다.
+대화는 새로고침 시 초기화되며 외부 모델·API 호출이나 서버 저장은 없습니다.
+
+아래 Python 모듈은 별도 경로입니다. 브라우저 채팅이 이 모듈 전체를 호출하는 것은 아닙니다.
+기존 저장 사례의 조회는 `/replay`, JSON 조회는 `/api/analysis`에서 유지합니다.
+
+## 근거 처리 모듈과 저장 사례
+
 ![Financial Insight Agent architecture](assets/architecture.svg)
 
 공개 후보는 승인된 recorded replay를 immutable input으로 취급합니다. 질문은
